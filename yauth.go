@@ -1,8 +1,8 @@
 
-package yauth
+package auth
 
-// YAuth main structure
-type YAuth struct {
+// Auth main structure
+type Auth struct {
   URL string
 }
 

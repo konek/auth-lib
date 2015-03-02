@@ -1,5 +1,5 @@
 
-package yauth
+package auth
 
 import (
   "bytes"
@@ -16,10 +16,10 @@ import (
 // If authentication is successful, it returns ok = true, uid = <UserID>, err = nil.
 //
 // In any other cases, it returns ok = false, uid = "" and the appropriate error
-func (y YAuth) Auth(Domain, Username, Password string) (ok bool, uid string, err error) {
+func (a Auth) Auth(Domain, Username, Password string) (ok bool, uid string, err error) {
   var authRes controllers.AuthResponse
 
-  url := y.URL + "/auth"
+  url := a.URL + "/auth"
   request := controllers.AuthRequest{
     Domain: Domain,
     Username: Username,
