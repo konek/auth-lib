@@ -11,6 +11,11 @@ import (
   "github.com/konek/auth-server/controllers"
 )
 
+// Auth main structure
+type Auth struct {
+  URL string
+}
+
 // Auth sends a authentication request to the server.
 //
 // If authentication is successful, it returns ok = true, uid = <UserID>, err = nil.
