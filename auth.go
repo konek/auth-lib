@@ -8,7 +8,7 @@ import (
   "io/ioutil"
   "encoding/json"
 
-  "github.com/konek/auth-server/controllers"
+  "go.konek.io/auth-server/controllers"
 )
 
 // Auth main structure
