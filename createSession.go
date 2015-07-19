@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"encoding/json"
 
-	"go.konek.io/auth-server/controllers"
+	"gopkg.in/konek/auth-server.v1/controllers"
 )
 
 func (a Auth) Login(username string, password string, domain string) (ok bool, sid string, err error) {

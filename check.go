@@ -8,8 +8,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"go.konek.io/auth-server/controllers"
-	"go.konek.io/auth-server/models"
+	"gopkg.in/konek/auth-server.v1/controllers"
+	"gopkg.in/konek/auth-server.v1/models"
 )
 
 func (a Auth) Check(domain, sid string) (bool, models.User, error) {

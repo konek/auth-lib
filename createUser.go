@@ -8,8 +8,8 @@ import (
 	"io/ioutil"
 	"encoding/json"
 
-	"go.konek.io/auth-server/models"
-	"go.konek.io/auth-server/controllers"
+	"gopkg.in/konek/auth-server.v1/models"
+	"gopkg.in/konek/auth-server.v1/controllers"
 )
 
 type Error struct{
